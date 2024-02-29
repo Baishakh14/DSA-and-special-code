@@ -9,6 +9,7 @@ po2(int n) ///find the power of by logic
         n/=2;
     }
     if(n==1) return n;
+    return 0;
 }
 ispo2(int n)  ///find the power of 2 by bitwise logic
 {
@@ -19,7 +20,7 @@ ispo2(int n)  ///find the power of 2 by bitwise logic
 }
 ispowo2(int n) ///power of 2 by bitwise another logic;
 {
-    if(n<=0) return 0;
+    if(n<=0&&n%2!=0) return 0;
     int a = (n&-n);
     if(a==n) return 1;
     return 0;
